@@ -1,0 +1,394 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+
+
+
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 18px 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #2c3e50;
+
+    z-index: 1000;
+}
+
+nav h1{
+    font-size: 26px;
+    color: white;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    color: #dcdcdc;
+}
+
+
+
+
+.hero{
+
+    height: 90vh;
+
+    background-image:
+    linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+    url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1600&auto=format&fit=crop');
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+.hero-contenido{
+    max-width: 800px;
+}
+
+.hero h2{
+    font-size: 60px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.hero p{
+    font-size: 22px;
+    line-height: 1.5;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.btn{
+
+    display: inline-block;
+
+    padding: 14px 30px;
+
+    background: white;
+
+    color: #2c3e50;
+
+    text-decoration: none;
+
+    border-radius: 6px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.btn:hover{
+    background: #e5e5e5;
+}
+
+
+
+
+.seccion{
+    padding: 100px 10%;
+}
+
+.titulo{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+    color: #2c3e50;
+}
+
+
+
+
+.equipo{
+
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+
+    flex-wrap: wrap;
+}
+
+.persona{
+
+    background: white;
+
+    width: 320px;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    transition: 0.3s;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.persona:hover{
+    transform: translateY(-5px);
+}
+
+.persona img{
+
+    width: 100%;
+    height: 300px;
+
+    object-fit: cover;
+}
+
+.persona h3{
+    padding: 20px 20px 10px;
+    font-size: 24px;
+}
+
+.persona p{
+    padding: 0 20px;
+    line-height: 1.5;
+}
+
+.persona span{
+    display: block;
+    padding: 20px;
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+
+
+
+.fondo{
+    background-color: #ececec;
+}
+
+#contenedorServicios{
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+
+    gap: 30px;
+}
+
+.card{
+
+    background: white;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    transition: 0.3s;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.card:hover{
+    transform: translateY(-5px);
+}
+
+.card img{
+
+    width: 100%;
+    height: 220px;
+
+    object-fit: cover;
+}
+
+.card-contenido{
+    padding: 20px;
+}
+
+.card h3{
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.card p{
+    line-height: 1.5;
+}
+
+.precio{
+
+    display: inline-block;
+
+    margin-top: 20px;
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+    color: #2c3e50;
+}
+
+
+
+
+.mapa{
+    margin-top: 60px;
+}
+
+.mapa h3{
+
+    text-align: center;
+
+    margin-bottom: 20px;
+
+    font-size: 28px;
+}
+
+.mapa iframe{
+    border-radius: 12px;
+}
+
+
+
+
+.contacto{
+    background: white;
+}
+
+form{
+
+    max-width: 700px;
+
+    margin: auto;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+input,
+textarea{
+
+    padding: 15px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+    background: white;
+
+    color: black;
+
+    font-size: 16px;
+}
+
+textarea{
+
+    height: 150px;
+
+    resize: none;
+}
+
+input:focus,
+textarea:focus{
+    outline: 2px solid #2c3e50;
+}
+
+button{
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #2c3e50;
+
+    color: white;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover{
+
+    background: #1f2d3a;
+}
+
+#mensaje{
+
+    text-align: center;
+
+    margin-top: 20px;
+
+    color: green;
+
+    font-size: 18px;
+
+    font-weight: bold;
+}
+
+
+
+
+@media(max-width: 768px){
+
+    nav{
+
+        padding: 15px;
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    nav ul{
+        gap: 15px;
+    }
+
+    .hero h2{
+        font-size: 40px;
+    }
+
+    .hero p{
+        font-size: 18px;
+    }
+
+    .titulo{
+        font-size: 32px;
+    }
+
+}
